@@ -79,7 +79,7 @@ public class TestBase {
 			chromeOptions.addArguments("--start-maximized");
 			return new ChromeDriver(chromeOptions);
 		} else if (browserName.equalsIgnoreCase("FF")) {
-			System.setProperty("webdriver.gecko.driver", "C://Users/Gorya/Desktop/Krishna_study/geckodriver.exe");
+			System.setProperty("webdriver.gecko.driver", "/usr/local/bin/geckodriver.exe");
 			return new FirefoxDriver();
 		} else if (browserName.equalsIgnoreCase("IE")) {
 			System.setProperty("webdriver.ie.driver", TestUtils.WORKSAPCE_PATH + "//drivers//IEDriverServer.exe");
