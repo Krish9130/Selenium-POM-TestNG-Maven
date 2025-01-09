@@ -74,7 +74,7 @@ public class TestBase {
 
 	private static WebDriver getDriver(String browserName) {
 		if (browserName.equalsIgnoreCase("chrome")) {
-			System.setProperty("webdriver.chrome.driver", TestUtils.WORKSAPCE_PATH + "//drivers//chromedriver.exe");
+			System.setProperty("webdriver.chrome.driver", "/usr/local/bin/chromedriver"); //TestUtils.WORKSAPCE_PATH + "//drivers//chromedriver.exe");
 			chromeOptions = new ChromeOptions();
 			chromeOptions.addArguments("--start-maximized");
 			return new ChromeDriver(chromeOptions);
